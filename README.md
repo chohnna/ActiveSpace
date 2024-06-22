@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project demonstrates the use of the PySCF (Python-based Simulations of Chemistry Framework) library for quantum chemistry calculations. It focuses on solving the electronic Hamiltonian of molecular systems using ab initio methods, specifically through the Born-Oppenheimer approximation. The example provided uses a water molecule to showcase the capabilities of PySCF in performing Hartree-Fock (HF) and Time-Dependent Hartree-Fock (TD-HF) calculations.
+This project demonstrates the use of the PySCF (Python-based Simulations of Chemistry Framework) library for quantum chemistry calculations. It focuses on solving the electronic Hamiltonian of molecular systems using ab initio methods. The example provided uses a water molecule to showcase the capabilities of PySCF in performing Hartree-Fock (HF) and Time-Dependent Hartree-Fock (TD-HF) calculations.
 
 ## Usage
 
