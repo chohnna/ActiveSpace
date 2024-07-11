@@ -5,6 +5,15 @@
 This project demonstrates the use of the PySCF (Python-based Simulations of Chemistry Framework) library for quantum chemistry calculations. It focuses on solving the electronic Hamiltonian of molecular systems using ab initio methods. The example provided uses a water molecule to showcase the capabilities of PySCF in performing Hartree-Fock (HF) and Time-Dependent Hartree-Fock (TD-HF) calculations.
 
 ## Usage
+## Tutorial
+
+For a detailed example of how the PySCF library can be used for quantum chemistry calculations, please see the `activespace.ipynb` Jupyter Notebook included in this repository. This tutorial provides step-by-step instructions and practical insights into computational techniques for analyzing quantum systems.
+
+To access the tutorial, navigate to the `ActiveSpace` directory after cloning the repository and open the Jupyter Notebook:
+
+```bash
+cd ActiveSpace
+jupyter lab activespace.ipynb
 
 ### Prerequisites
 
