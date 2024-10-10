@@ -31,6 +31,7 @@ class Pyscf_helper:
         coeff = mean_field.mo_coeff
         fock_matrix = mean_field.get_fock()
         density = mean_field.make_rdm1()
+        n_electrons = 2*round(0.5 * np.trace(density@overlap))
         
         self.mf = mean_field
 

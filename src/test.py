@@ -26,3 +26,6 @@ cis_singlet_E, density_singlet, cis_triplet_E, density_triplet = scf_water_init.
 # Print results
 print("CIS Singlet Energy:", cis_singlet_E)
 print("CIS Triplet Energy:", cis_triplet_E)
+
+active_space_type = "Increasing both occupied and virtual orbital" # "Increasing occupied orbital", "Increasing virtual orbital"
+orbital_type = "natural orbitals" # "canonical orbitals"
