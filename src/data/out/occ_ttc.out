@@ -1,0 +1,2901 @@
+
+
+******** <class 'pyscf.scf.hf.RHF'> ********
+method = RHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 50
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmp7qc791wi
+max_memory 4000 MB (current use 0 MB)
+Set gradient conv threshold to 3.16228e-05
+Initial guess from minao.
+init E= -686.87387220781
+  HOMO = -0.1109337623033  LUMO = -2.07221072213968e-05
+cycle= 1 E= -680.129177515133  delta_E= 6.74  |g|= 0.498  |ddm|= 7.99
+  HOMO = -0.151852185977297  LUMO = 0.134374536154619
+cycle= 2 E= -680.234760204274  delta_E= -0.106  |g|= 0.127  |ddm|= 0.97
+  HOMO = -0.164758728583154  LUMO = 0.128618029244008
+cycle= 3 E= -680.242407118908  delta_E= -0.00765  |g|= 0.0262  |ddm|= 0.312
+  HOMO = -0.161525262731707  LUMO = 0.133149397460603
+cycle= 4 E= -680.242726380772  delta_E= -0.000319  |g|= 0.00787  |ddm|= 0.0435
+  HOMO = -0.161647254806729  LUMO = 0.134611459739825
+cycle= 5 E= -680.242814829516  delta_E= -8.84e-05  |g|= 0.00319  |ddm|= 0.0262
+  HOMO = -0.162294564740142  LUMO = 0.134932025961883
+cycle= 6 E= -680.242833409388  delta_E= -1.86e-05  |g|= 0.000847  |ddm|= 0.0159
+  HOMO = -0.162467479455656  LUMO = 0.134953308471557
+cycle= 7 E= -680.242834210937  delta_E= -8.02e-07  |g|= 0.000151  |ddm|= 0.00333
+  HOMO = -0.162450609647079  LUMO = 0.134997714660492
+cycle= 8 E= -680.242834235073  delta_E= -2.41e-08  |g|= 3.88e-05  |ddm|= 0.000536
+  HOMO = -0.162454873251883  LUMO = 0.134995297204276
+cycle= 9 E= -680.242834236345  delta_E= -1.27e-09  |g|= 1.57e-05  |ddm|= 9.49e-05
+  HOMO = -0.16245593199245  LUMO = 0.1349948640838
+cycle= 10 E= -680.24283423656  delta_E= -2.15e-10  |g|= 4.29e-06  |ddm|= 4.49e-05
+  HOMO = -0.16245542616096  LUMO = 0.134995387811188
+Extra cycle  E= -680.242834236565  delta_E= -5e-12  |g|= 2.36e-06  |ddm|= 9.04e-06
+converged SCF energy = -680.242834236565
+**** SCF Summaries ****
+Total Energy =                        -680.242834236564931
+Nuclear Repulsion Energy =            1113.411785416541306
+One-electron Energy =                -3137.901905606566288
+Two-electron Energy =                 1344.247285953460050
+**** MO energy ****
+MO #1   energy= -11.0396860561437  occ= 2
+MO #2   energy= -11.0396309434049  occ= 2
+MO #3   energy= -11.0394443569189  occ= 2
+MO #4   energy= -11.0394207998177  occ= 2
+MO #5   energy= -11.0393105516708  occ= 2
+MO #6   energy= -11.0392239126279  occ= 2
+MO #7   energy= -11.0300394538347  occ= 2
+MO #8   energy= -11.0300321547458  occ= 2
+MO #9   energy= -11.029625260075   occ= 2
+MO #10  energy= -11.0295774347515  occ= 2
+MO #11  energy= -11.0288905248949  occ= 2
+MO #12  energy= -11.028868998829   occ= 2
+MO #13  energy= -11.0285745718276  occ= 2
+MO #14  energy= -11.0285557328372  occ= 2
+MO #15  energy= -11.0267373464828  occ= 2
+MO #16  energy= -11.0266837106397  occ= 2
+MO #17  energy= -11.0266147091734  occ= 2
+MO #18  energy= -11.0265679353674  occ= 2
+MO #19  energy= -1.12495277048439  occ= 2
+MO #20  energy= -1.09991349592322  occ= 2
+MO #21  energy= -1.05840695508729  occ= 2
+MO #22  energy= -1.00725463210507  occ= 2
+MO #23  energy= -1.00207169489409  occ= 2
+MO #24  energy= -0.980571320814324 occ= 2
+MO #25  energy= -0.938136713749556 occ= 2
+MO #26  energy= -0.937260349713891 occ= 2
+MO #27  energy= -0.882272406149081 occ= 2
+MO #28  energy= -0.83110798357127  occ= 2
+MO #29  energy= -0.781622022219331 occ= 2
+MO #30  energy= -0.764477623102807 occ= 2
+MO #31  energy= -0.757531152221267 occ= 2
+MO #32  energy= -0.745077111154704 occ= 2
+MO #33  energy= -0.706366689105646 occ= 2
+MO #34  energy= -0.655349577449212 occ= 2
+MO #35  energy= -0.625221981157991 occ= 2
+MO #36  energy= -0.623759872375081 occ= 2
+MO #37  energy= -0.620214517606649 occ= 2
+MO #38  energy= -0.574690738655115 occ= 2
+MO #39  energy= -0.572285603462214 occ= 2
+MO #40  energy= -0.555868935002492 occ= 2
+MO #41  energy= -0.546372788596539 occ= 2
+MO #42  energy= -0.532245630013795 occ= 2
+MO #43  energy= -0.522338460236546 occ= 2
+MO #44  energy= -0.514686778739076 occ= 2
+MO #45  energy= -0.503931350065158 occ= 2
+MO #46  energy= -0.502878510946115 occ= 2
+MO #47  energy= -0.489773364565011 occ= 2
+MO #48  energy= -0.466623434000398 occ= 2
+MO #49  energy= -0.45430134174507  occ= 2
+MO #50  energy= -0.451503593740816 occ= 2
+MO #51  energy= -0.419303845377159 occ= 2
+MO #52  energy= -0.40717705104798  occ= 2
+MO #53  energy= -0.404926932261973 occ= 2
+MO #54  energy= -0.400018801124302 occ= 2
+MO #55  energy= -0.362267826404316 occ= 2
+MO #56  energy= -0.328027009427234 occ= 2
+MO #57  energy= -0.319538607900295 occ= 2
+MO #58  energy= -0.251148622310673 occ= 2
+MO #59  energy= -0.242249003201065 occ= 2
+MO #60  energy= -0.16245542616096  occ= 2
+MO #61  energy= 0.134995387811188  occ= 0
+MO #62  energy= 0.227710332758919  occ= 0
+MO #63  energy= 0.233959673536955  occ= 0
+MO #64  energy= 0.315024822859961  occ= 0
+MO #65  energy= 0.32758173627479   occ= 0
+MO #66  energy= 0.367717995636643  occ= 0
+MO #67  energy= 0.433046335878638  occ= 0
+MO #68  energy= 0.521593417685018  occ= 0
+MO #69  energy= 0.567298874848302  occ= 0
+MO #70  energy= 0.580546437690474  occ= 0
+MO #71  energy= 0.584044418112768  occ= 0
+MO #72  energy= 0.592578683121123  occ= 0
+MO #73  energy= 0.619467315919733  occ= 0
+MO #74  energy= 0.630804631406579  occ= 0
+MO #75  energy= 0.644369706278517  occ= 0
+MO #76  energy= 0.665294255809332  occ= 0
+MO #77  energy= 0.680240954733541  occ= 0
+MO #78  energy= 0.693602316505908  occ= 0
+MO #79  energy= 0.701257403455314  occ= 0
+MO #80  energy= 0.70226698675508   occ= 0
+MO #81  energy= 0.707333608667596  occ= 0
+MO #82  energy= 0.722663967919067  occ= 0
+MO #83  energy= 0.74487505507735   occ= 0
+MO #84  energy= 0.751802935304443  occ= 0
+MO #85  energy= 0.755389803381867  occ= 0
+MO #86  energy= 0.788639766217607  occ= 0
+MO #87  energy= 0.830347378621738  occ= 0
+MO #88  energy= 0.838899772796466  occ= 0
+MO #89  energy= 0.842270658717944  occ= 0
+MO #90  energy= 0.875042373902827  occ= 0
+MO #91  energy= 0.912739335083012  occ= 0
+MO #92  energy= 0.942957371691042  occ= 0
+MO #93  energy= 0.943975299534675  occ= 0
+MO #94  energy= 0.946878266816528  occ= 0
+MO #95  energy= 0.989088376571653  occ= 0
+MO #96  energy= 0.995290188848352  occ= 0
+MO #97  energy= 1.02484930293864   occ= 0
+MO #98  energy= 1.04864969165511   occ= 0
+MO #99  energy= 1.0983632218134    occ= 0
+MO #100 energy= 1.1416886204061    occ= 0
+MO #101 energy= 1.18143716818231   occ= 0
+MO #102 energy= 1.18160298158647   occ= 0
+ ** Mulliken pop on meta-lowdin orthogonal AOs  **
+ ** Mulliken pop  **
+pop of  0 H 1s            0.96462
+pop of  1 H 1s            0.96433
+pop of  2 C 1s            1.99983
+pop of  2 C 2s            1.02614
+pop of  2 C 2px           0.99851
+pop of  2 C 2py           1.00079
+pop of  2 C 2pz           1.01095
+pop of  3 H 1s            0.96462
+pop of  4 C 1s            1.99983
+pop of  4 C 2s            1.02642
+pop of  4 C 2px           0.99790
+pop of  4 C 2py           1.00096
+pop of  4 C 2pz           1.01075
+pop of  5 H 1s            0.96460
+pop of  6 C 1s            1.99983
+pop of  6 C 2s            1.02874
+pop of  6 C 2px           1.00880
+pop of  6 C 2py           0.99991
+pop of  6 C 2pz           0.99835
+pop of  7 H 1s            0.96433
+pop of  8 C 1s            1.99983
+pop of  8 C 2s            1.02890
+pop of  8 C 2px           1.00125
+pop of  8 C 2py           1.00392
+pop of  8 C 2pz           1.00152
+pop of  9 C 1s            1.99983
+pop of  9 C 2s            1.02115
+pop of  9 C 2px           0.98931
+pop of  9 C 2py           0.99190
+pop of  9 C 2pz           0.99365
+pop of  10 H 1s           0.96624
+pop of  11 H 1s           0.96634
+pop of  12 H 1s           0.96462
+pop of  13 C 1s           1.99983
+pop of  13 C 2s           1.02648
+pop of  13 C 2px          0.99797
+pop of  13 C 2py          1.00086
+pop of  13 C 2pz          1.01066
+pop of  14 H 1s           0.96462
+pop of  15 C 1s           1.99983
+pop of  15 C 2s           1.02137
+pop of  15 C 2px          0.98610
+pop of  15 C 2py          0.99362
+pop of  15 C 2pz          0.99501
+pop of  16 H 1s           0.96630
+pop of  17 C 1s           1.99983
+pop of  17 C 2s           1.03131
+pop of  17 C 2px          1.00455
+pop of  17 C 2py          1.00493
+pop of  17 C 2pz          0.99848
+pop of  18 C 1s           1.99983
+pop of  18 C 2s           1.03164
+pop of  18 C 2px          1.00315
+pop of  18 C 2py          1.00517
+pop of  18 C 2pz          0.99912
+pop of  19 C 1s           1.99983
+pop of  19 C 2s           1.02897
+pop of  19 C 2px          1.00127
+pop of  19 C 2py          1.00400
+pop of  19 C 2pz          1.00141
+pop of  20 C 1s           1.99983
+pop of  20 C 2s           1.02607
+pop of  20 C 2px          0.99857
+pop of  20 C 2py          1.00084
+pop of  20 C 2pz          1.01095
+pop of  21 H 1s           0.96460
+pop of  22 C 1s           1.99983
+pop of  22 C 2s           1.03165
+pop of  22 C 2px          1.00314
+pop of  22 C 2py          1.00496
+pop of  22 C 2pz          0.99920
+pop of  23 C 1s           1.99983
+pop of  23 C 2s           1.02013
+pop of  23 C 2px          0.98752
+pop of  23 C 2py          0.99304
+pop of  23 C 2pz          0.99586
+pop of  24 C 1s           1.99983
+pop of  24 C 2s           1.02130
+pop of  24 C 2px          0.98606
+pop of  24 C 2py          0.99373
+pop of  24 C 2pz          0.99495
+pop of  25 C 1s           1.99983
+pop of  25 C 2s           1.02851
+pop of  25 C 2px          1.00884
+pop of  25 C 2py          0.99986
+pop of  25 C 2pz          0.99857
+pop of  26 C 1s           1.99983
+pop of  26 C 2s           1.02008
+pop of  26 C 2px          0.98760
+pop of  26 C 2py          0.99315
+pop of  26 C 2pz          0.99585
+pop of  27 C 1s           1.99983
+pop of  27 C 2s           1.02087
+pop of  27 C 2px          0.98941
+pop of  27 C 2py          0.99197
+pop of  27 C 2pz          0.99387
+pop of  28 C 1s           1.99983
+pop of  28 C 2s           1.03135
+pop of  28 C 2px          1.00453
+pop of  28 C 2py          1.00473
+pop of  28 C 2pz          0.99849
+pop of  29 H 1s           0.96631
+ ** Mulliken atomic charges  **
+charge of    0H =      0.03538
+charge of    1H =      0.03567
+charge of    2C =     -0.03621
+charge of    3H =      0.03538
+charge of    4C =     -0.03586
+charge of    5H =      0.03540
+charge of    6C =     -0.03563
+charge of    7H =      0.03567
+charge of    8C =     -0.03542
+charge of    9C =      0.00416
+charge of   10H =      0.03376
+charge of   11H =      0.03366
+charge of   12H =      0.03538
+charge of   13C =     -0.03580
+charge of   14H =      0.03538
+charge of   15C =      0.00407
+charge of   16H =      0.03370
+charge of   17C =     -0.03909
+charge of   18C =     -0.03891
+charge of   19C =     -0.03548
+charge of   20C =     -0.03626
+charge of   21H =      0.03540
+charge of   22C =     -0.03878
+charge of   23C =      0.00361
+charge of   24C =      0.00413
+charge of   25C =     -0.03562
+charge of   26C =      0.00350
+charge of   27C =      0.00405
+charge of   28C =     -0.03894
+charge of   29H =      0.03369
+Dipole moment(X, Y, Z, Debye): -0.00144,  0.00299,  0.00113
+
+
+******** <class 'pyscf.scf.hf.RHF'> ********
+method = RHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 50
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmp7qc791wi
+max_memory 4000 MB (current use 0 MB)
+Set gradient conv threshold to 3.16228e-05
+Initial guess from minao.
+init E= -686.87387220781
+  HOMO = -0.1109337623033  LUMO = -2.07221072213968e-05
+cycle= 1 E= -680.129177515133  delta_E= 6.74  |g|= 0.498  |ddm|= 7.99
+  HOMO = -0.151852185977297  LUMO = 0.134374536154619
+cycle= 2 E= -680.234760204274  delta_E= -0.106  |g|= 0.127  |ddm|= 0.97
+  HOMO = -0.164758728583154  LUMO = 0.128618029244008
+cycle= 3 E= -680.242407118908  delta_E= -0.00765  |g|= 0.0262  |ddm|= 0.312
+  HOMO = -0.161525262731707  LUMO = 0.133149397460603
+cycle= 4 E= -680.242726380772  delta_E= -0.000319  |g|= 0.00787  |ddm|= 0.0435
+  HOMO = -0.161647254806729  LUMO = 0.134611459739825
+cycle= 5 E= -680.242814829516  delta_E= -8.84e-05  |g|= 0.00319  |ddm|= 0.0262
+  HOMO = -0.162294564740142  LUMO = 0.134932025961883
+cycle= 6 E= -680.242833409388  delta_E= -1.86e-05  |g|= 0.000847  |ddm|= 0.0159
+  HOMO = -0.162467479455656  LUMO = 0.134953308471557
+cycle= 7 E= -680.242834210937  delta_E= -8.02e-07  |g|= 0.000151  |ddm|= 0.00333
+  HOMO = -0.162450609647079  LUMO = 0.134997714660492
+cycle= 8 E= -680.242834235073  delta_E= -2.41e-08  |g|= 3.88e-05  |ddm|= 0.000536
+  HOMO = -0.162454873251883  LUMO = 0.134995297204276
+cycle= 9 E= -680.242834236345  delta_E= -1.27e-09  |g|= 1.57e-05  |ddm|= 9.49e-05
+  HOMO = -0.16245593199245  LUMO = 0.1349948640838
+cycle= 10 E= -680.24283423656  delta_E= -2.15e-10  |g|= 4.29e-06  |ddm|= 4.49e-05
+  HOMO = -0.16245542616096  LUMO = 0.134995387811188
+Extra cycle  E= -680.242834236565  delta_E= -5e-12  |g|= 2.36e-06  |ddm|= 9.04e-06
+converged SCF energy = -680.242834236565
+  HOMO = -0.16245542616096  LUMO = 0.134995387811188
+number of orbitals: 102.00000000
+number of electrons: 120.00000000
+E(CCSD) = -681.4969487878421  E_corr = -1.25411455127716
+eomcc singlet, triplet 0.15130151398896624 0.053617208827761303
+eomcc singlet,triplet eV 4.117127221014906 1.4589997426973207
+converged SCF energy = -678.403237285159
+Excited State energies (eV)
+[2.70338631 3.48209968 3.7581638 ]
+Excited State energies (eV)
+[2.70338631 3.48209968 3.7581638 ]
+Excited State energies (eV)
+[1.60612796 3.02325331 3.49708556]
+tddcf singlet, triplet 0.09934761527623222 0.059024114487009734
+tddft singlet,triplet eV 2.7033884884094452 1.6061292583528919
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 1 singlet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmp7qc791wi
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[4.45398322]
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 1 triplet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmp7qc791wi
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[0.9562196]
+tda singlet, triplet 0.16368086584976502 0.035140422609189065
+cis singlet,triplet eV 4.4539868146891175 0.9562203752489262
+homoidx 59
+lumoidx 60
+Number of Active orbitals:  61
+Number of Virtual orbitals:  41
+Number of electrons in active space 120
+
+
+******** <class 'pyscf.scf.hf.RHF'> ********
+method = RHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 200
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmp5334zjc1
+max_memory 4000 MB (current use 0 MB)
+Set gradient conv threshold to 3.16228e-05
+init E= -680.242834242694
+  HOMO = -0.162455595560945  LUMO = 0.134995256190395
+cycle= 1 E= -680.242834242556  delta_E= 1.38e-10  |g|= 5.56e-07  |ddm|= 2.58e-06
+  HOMO = -0.162455586468353  LUMO = 0.134995278969392
+Extra cycle  E= -680.242834243111  delta_E= -5.55e-10  |g|= 1.03e-07  |ddm|= 4.82e-07
+converged SCF energy = -680.242834243111
+ehfact -680.2428342431106
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 singlet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmp5334zjc1
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[5.34815231 6.46433586 7.07071675]
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 triplet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmp5334zjc1
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[2.534828   5.17046921 5.46609009]
+Number of Active orbitals:  62
+Number of Virtual orbitals:  40
+Number of electrons in active space 120
+
+
+******** <class 'pyscf.scf.hf.RHF'> ********
+method = RHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 200
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpdyfoqy9x
+max_memory 4000 MB (current use 0 MB)
+Set gradient conv threshold to 3.16228e-05
+init E= -680.242834242775
+  HOMO = -0.162455595484657  LUMO = 0.134995255919253
+cycle= 1 E= -680.242834242736  delta_E= 3.91e-11  |g|= 6.61e-07  |ddm|= 2.85e-06
+  HOMO = -0.162455587382516  LUMO = 0.134995278160743
+Extra cycle  E= -680.242834243278  delta_E= -5.43e-10  |g|= 9.96e-08  |ddm|= 4.95e-07
+converged SCF energy = -680.242834243278
+ehfact -680.2428342432784
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 singlet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpdyfoqy9x
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[5.02634675 5.58297773 6.99491724]
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 triplet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpdyfoqy9x
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[2.52117738 5.08375954 5.45125331]
+Number of Active orbitals:  63
+Number of Virtual orbitals:  39
+Number of electrons in active space 120
+
+
+******** <class 'pyscf.scf.hf.RHF'> ********
+method = RHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 200
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpt8mwb5o2
+max_memory 4000 MB (current use 0 MB)
+Set gradient conv threshold to 3.16228e-05
+init E= -680.242834243398
+  HOMO = -0.162455595226714  LUMO = 0.134995256162615
+cycle= 1 E= -680.242834243586  delta_E= -1.88e-10  |g|= 7.49e-07  |ddm|= 3.04e-06
+  HOMO = -0.162455575542473  LUMO = 0.13499530251345
+Extra cycle  E= -680.242834243681  delta_E= -9.53e-11  |g|= 1.37e-07  |ddm|= 6.43e-07
+converged SCF energy = -680.242834243681
+ehfact -680.242834243681
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 singlet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpt8mwb5o2
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[5.00590021 5.44657697 6.87183893]
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 triplet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpt8mwb5o2
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[2.15019392 3.92197556 4.83983895]
+Number of Active orbitals:  64
+Number of Virtual orbitals:  38
+Number of electrons in active space 120
+
+
+******** <class 'pyscf.scf.hf.RHF'> ********
+method = RHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 200
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpyf_c_g9g
+max_memory 4000 MB (current use 0 MB)
+Set gradient conv threshold to 3.16228e-05
+init E= -680.242834238505
+  HOMO = -0.162455595524167  LUMO = 0.13499525592117
+cycle= 1 E= -680.242834238886  delta_E= -3.81e-10  |g|= 8.48e-07  |ddm|= 3.33e-06
+  HOMO = -0.162455583489608  LUMO = 0.134995282998433
+Extra cycle  E= -680.242834238384  delta_E= 5.02e-10  |g|= 1.57e-07  |ddm|= 7.04e-07
+converged SCF energy = -680.242834238384
+ehfact -680.2428342383841
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 singlet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpyf_c_g9g
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[5.00564399 5.39308052 6.86073066]
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 triplet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpyf_c_g9g
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[1.90039483 3.51051304 4.71660976]
+Number of Active orbitals:  65
+Number of Virtual orbitals:  37
+Number of electrons in active space 120
+
+
+******** <class 'pyscf.scf.hf.RHF'> ********
+method = RHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 200
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpe6q3_fg1
+max_memory 4000 MB (current use 0 MB)
+Set gradient conv threshold to 3.16228e-05
+init E= -680.242834237088
+  HOMO = -0.162455595341487  LUMO = 0.134995256230664
+cycle= 1 E= -680.242834237728  delta_E= -6.39e-10  |g|= 9.32e-07  |ddm|= 3.59e-06
+  HOMO = -0.162455576332431  LUMO = 0.134995288602775
+Extra cycle  E= -680.242834237826  delta_E= -9.8e-11  |g|= 1.6e-07  |ddm|= 6.96e-07
+converged SCF energy = -680.242834237826
+ehfact -680.2428342378257
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 singlet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpe6q3_fg1
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[4.9827205  5.27532852 6.79384086]
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 triplet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpe6q3_fg1
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[1.74096035 3.34389089 4.6589329 ]
+Number of Active orbitals:  66
+Number of Virtual orbitals:  36
+Number of electrons in active space 120
+
+
+******** <class 'pyscf.scf.hf.RHF'> ********
+method = RHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 200
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpuihgqcw6
+max_memory 4000 MB (current use 0 MB)
+Set gradient conv threshold to 3.16228e-05
+init E= -680.242834246897
+  HOMO = -0.16245559530432  LUMO = 0.134995256160287
+cycle= 1 E= -680.24283424731  delta_E= -4.13e-10  |g|= 1.14e-06  |ddm|= 4.07e-06
+  HOMO = -0.16245558054822  LUMO = 0.134995289596466
+Extra cycle  E= -680.242834247018  delta_E= 2.92e-10  |g|= 2.2e-07  |ddm|= 9.62e-07
+converged SCF energy = -680.242834247018
+ehfact -680.2428342470182
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 singlet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpuihgqcw6
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[4.95215961 5.26150927 6.76322472]
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 triplet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpuihgqcw6
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[1.43381705 3.04180244 4.32596126]
+Number of Active orbitals:  67
+Number of Virtual orbitals:  35
+Number of electrons in active space 120
+
+
+******** <class 'pyscf.scf.hf.RHF'> ********
+method = RHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 200
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpv5gg6gj5
+max_memory 4000 MB (current use 0 MB)
+Set gradient conv threshold to 3.16228e-05
+init E= -680.242834240152
+  HOMO = -0.162455595585276  LUMO = 0.134995256158225
+cycle= 1 E= -680.242834240275  delta_E= -1.23e-10  |g|= 1.15e-06  |ddm|= 4.11e-06
+  HOMO = -0.162455582122458  LUMO = 0.134995289390996
+Extra cycle  E= -680.242834240687  delta_E= -4.12e-10  |g|= 2.53e-07  |ddm|= 1.06e-06
+converged SCF energy = -680.242834240687
+ehfact -680.2428342406872
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 singlet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpv5gg6gj5
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[4.92333934 5.18262561 6.7593595 ]
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 triplet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpv5gg6gj5
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[1.31434738 2.78491776 4.05322044]
+Number of Active orbitals:  68
+Number of Virtual orbitals:  34
+Number of electrons in active space 120
+
+
+******** <class 'pyscf.scf.hf.RHF'> ********
+method = RHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 200
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmp2vxbb354
+max_memory 4000 MB (current use 0 MB)
+Set gradient conv threshold to 3.16228e-05
+init E= -680.242834238633
+  HOMO = -0.162455595703042  LUMO = 0.134995256223646
+cycle= 1 E= -680.24283423872  delta_E= -8.66e-11  |g|= 1.2e-06  |ddm|= 4.19e-06
+  HOMO = -0.162455580600773  LUMO = 0.134995286349817
+Extra cycle  E= -680.242834238544  delta_E= 1.76e-10  |g|= 2.63e-07  |ddm|= 1.08e-06
+converged SCF energy = -680.242834238544
+ehfact -680.2428342385435
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 singlet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmp2vxbb354
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[4.91916129 5.15525576 6.74372215]
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 triplet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmp2vxbb354
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[1.20143437 2.5763516  3.78205136]
+Number of Active orbitals:  69
+Number of Virtual orbitals:  33
+Number of electrons in active space 120
+
+
+******** <class 'pyscf.scf.hf.RHF'> ********
+method = RHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 200
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpzunv1rko
+max_memory 4000 MB (current use 0 MB)
+Set gradient conv threshold to 3.16228e-05
+init E= -680.242834244724
+  HOMO = -0.162455595536729  LUMO = 0.134995256262272
+cycle= 1 E= -680.24283424494  delta_E= -2.17e-10  |g|= 1.21e-06  |ddm|= 4.23e-06
+  HOMO = -0.162455577919247  LUMO = 0.134995288919708
+Extra cycle  E= -680.242834245018  delta_E= -7.71e-11  |g|= 2.94e-07  |ddm|= 1.2e-06
+converged SCF energy = -680.242834245018
+ehfact -680.2428342450175
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 singlet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpzunv1rko
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[4.91088099 5.15497628 6.73468356]
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 triplet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpzunv1rko
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[1.20108423 2.57603012 3.78171392]
+Number of Active orbitals:  70
+Number of Virtual orbitals:  32
+Number of electrons in active space 120
+
+
+******** <class 'pyscf.scf.hf.RHF'> ********
+method = RHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 200
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpc04bx1h0
+max_memory 4000 MB (current use 0 MB)
+Set gradient conv threshold to 3.16228e-05
+init E= -680.242834234363
+  HOMO = -0.162455595520649  LUMO = 0.13499525628223
+cycle= 1 E= -680.242834234602  delta_E= -2.4e-10  |g|= 1.24e-06  |ddm|= 4.26e-06
+  HOMO = -0.162455578390009  LUMO = 0.134995287525506
+Extra cycle  E= -680.242834234361  delta_E= 2.41e-10  |g|= 2.95e-07  |ddm|= 1.2e-06
+converged SCF energy = -680.242834234361
+ehfact -680.2428342343615
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 singlet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpc04bx1h0
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[4.91003276 5.1535669  6.73271823]
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 triplet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpc04bx1h0
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[1.0543681 2.4674037 3.6441927]
+Number of Active orbitals:  71
+Number of Virtual orbitals:  31
+Number of electrons in active space 120
+
+
+******** <class 'pyscf.scf.hf.RHF'> ********
+method = RHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 200
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpxwlu76tj
+max_memory 4000 MB (current use 0 MB)
+Set gradient conv threshold to 3.16228e-05
+init E= -680.242834243818
+  HOMO = -0.162455595394615  LUMO = 0.134995256268365
+cycle= 1 E= -680.242834243631  delta_E= 1.87e-10  |g|= 1.24e-06  |ddm|= 4.27e-06
+  HOMO = -0.162455577777213  LUMO = 0.134995287959887
+Extra cycle  E= -680.242834244095  delta_E= -4.64e-10  |g|= 3.01e-07  |ddm|= 1.22e-06
+converged SCF energy = -680.242834244095
+ehfact -680.2428342440951
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 singlet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpxwlu76tj
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[4.90726904 5.15332485 6.72779344]
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 triplet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpxwlu76tj
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[1.05281262 2.46607821 3.64285068]
+Number of Active orbitals:  72
+Number of Virtual orbitals:  30
+Number of electrons in active space 120
+
+
+******** <class 'pyscf.scf.hf.RHF'> ********
+method = RHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 200
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpndxoltmw
+max_memory 4000 MB (current use 0 MB)
+Set gradient conv threshold to 3.16228e-05
+init E= -680.242834247674
+  HOMO = -0.162455595497252  LUMO = 0.134995256129477
+cycle= 1 E= -680.242834248035  delta_E= -3.6e-10  |g|= 1.24e-06  |ddm|= 4.28e-06
+  HOMO = -0.162455577639232  LUMO = 0.134995288103311
+Extra cycle  E= -680.24283424776  delta_E= 2.75e-10  |g|= 3.06e-07  |ddm|= 1.24e-06
+converged SCF energy = -680.24283424776
+ehfact -680.2428342477599
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 singlet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpndxoltmw
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[4.90298997 5.15302656 6.72496867]
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 triplet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpndxoltmw
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[1.05230799 2.46504676 3.64174198]
+Number of Active orbitals:  73
+Number of Virtual orbitals:  29
+Number of electrons in active space 120
+
+
+******** <class 'pyscf.scf.hf.RHF'> ********
+method = RHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 200
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpsrsy9bcy
+max_memory 4000 MB (current use 0 MB)
+Set gradient conv threshold to 3.16228e-05
+init E= -680.242834247144
+  HOMO = -0.162455595488552  LUMO = 0.134995256209638
+cycle= 1 E= -680.24283424734  delta_E= -1.96e-10  |g|= 1.25e-06  |ddm|= 4.29e-06
+  HOMO = -0.162455579435896  LUMO = 0.134995286237268
+Extra cycle  E= -680.242834247495  delta_E= -1.55e-10  |g|= 3.2e-07  |ddm|= 1.29e-06
+converged SCF energy = -680.242834247495
+ehfact -680.2428342474952
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 singlet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpsrsy9bcy
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[4.89883251 5.15274964 6.71515209]
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 triplet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpsrsy9bcy
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[1.05156983 2.46423737 3.64071466]
+Number of Active orbitals:  74
+Number of Virtual orbitals:  28
+Number of electrons in active space 120
+
+
+******** <class 'pyscf.scf.hf.RHF'> ********
+method = RHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 200
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpes672tdd
+max_memory 4000 MB (current use 0 MB)
+Set gradient conv threshold to 3.16228e-05
+init E= -680.242834233636
+  HOMO = -0.162455595628714  LUMO = 0.134995256362875
+cycle= 1 E= -680.242834234058  delta_E= -4.22e-10  |g|= 1.26e-06  |ddm|= 4.32e-06
+  HOMO = -0.162455578646503  LUMO = 0.134995286855556
+Extra cycle  E= -680.242834234034  delta_E= 2.39e-11  |g|= 3.32e-07  |ddm|= 1.34e-06
+converged SCF energy = -680.242834234034
+ehfact -680.2428342340338
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 singlet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpes672tdd
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[4.88714487 5.15236348 6.69033441]
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 triplet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpes672tdd
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[1.04953556 2.46022188 3.63673165]
+Number of Active orbitals:  75
+Number of Virtual orbitals:  27
+Number of electrons in active space 120
+
+
+******** <class 'pyscf.scf.hf.RHF'> ********
+method = RHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 200
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmp604nseq9
+max_memory 4000 MB (current use 0 MB)
+Set gradient conv threshold to 3.16228e-05
+init E= -680.242834231215
+  HOMO = -0.162455595325248  LUMO = 0.134995256363689
+cycle= 1 E= -680.242834231152  delta_E= 6.25e-11  |g|= 1.26e-06  |ddm|= 4.36e-06
+  HOMO = -0.162455574018825  LUMO = 0.13499529135348
+Extra cycle  E= -680.24283423162  delta_E= -4.68e-10  |g|= 3.55e-07  |ddm|= 1.42e-06
+converged SCF energy = -680.24283423162
+ehfact -680.24283423162
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 singlet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmp604nseq9
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[4.86675026 5.15168097 6.68029832]
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 triplet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmp604nseq9
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[1.04365344 2.45692695 3.63373489]
+Number of Active orbitals:  76
+Number of Virtual orbitals:  26
+Number of electrons in active space 120
+
+
+******** <class 'pyscf.scf.hf.RHF'> ********
+method = RHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 200
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpxf5avpqx
+max_memory 4000 MB (current use 0 MB)
+Set gradient conv threshold to 3.16228e-05
+init E= -680.242834230851
+  HOMO = -0.162455595494112  LUMO = 0.134995256278156
+cycle= 1 E= -680.24283423109  delta_E= -2.39e-10  |g|= 1.28e-06  |ddm|= 4.41e-06
+  HOMO = -0.162455572441929  LUMO = 0.134995292985192
+Extra cycle  E= -680.242834231022  delta_E= 6.82e-11  |g|= 3.97e-07  |ddm|= 1.57e-06
+converged SCF energy = -680.242834231022
+ehfact -680.2428342310216
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 singlet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpxf5avpqx
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[4.84771436 5.15138368 6.67198467]
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 triplet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpxf5avpqx
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[1.04146749 2.45541494 3.63220802]
+Number of Active orbitals:  77
+Number of Virtual orbitals:  25
+Number of electrons in active space 120
+
+
+******** <class 'pyscf.scf.hf.RHF'> ********
+method = RHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 200
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpqyl7lapw
+max_memory 4000 MB (current use 0 MB)
+Set gradient conv threshold to 3.16228e-05
+init E= -680.242834232198
+  HOMO = -0.162455595405041  LUMO = 0.134995256153617
+cycle= 1 E= -680.242834232355  delta_E= -1.57e-10  |g|= 1.29e-06  |ddm|= 4.48e-06
+  HOMO = -0.162455571277125  LUMO = 0.134995293762132
+Extra cycle  E= -680.242834232345  delta_E= 1e-11  |g|= 4.31e-07  |ddm|= 1.7e-06
+converged SCF energy = -680.242834232345
+ehfact -680.2428342323446
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 singlet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpqyl7lapw
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[4.809585  5.1507148 6.6522412]
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 triplet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpqyl7lapw
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[1.03892924 2.45086906 3.6271632 ]
+Number of Active orbitals:  78
+Number of Virtual orbitals:  24
+Number of electrons in active space 120
+
+
+******** <class 'pyscf.scf.hf.RHF'> ********
+method = RHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 200
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmp314fsuy_
+max_memory 4000 MB (current use 0 MB)
+Set gradient conv threshold to 3.16228e-05
+init E= -680.242834237209
+  HOMO = -0.162455595399948  LUMO = 0.134995256206953
+cycle= 1 E= -680.242834237479  delta_E= -2.7e-10  |g|= 1.29e-06  |ddm|= 4.51e-06
+  HOMO = -0.162455571725646  LUMO = 0.134995293245693
+Extra cycle  E= -680.242834237215  delta_E= 2.64e-10  |g|= 4.51e-07  |ddm|= 1.78e-06
+converged SCF energy = -680.242834237215
+ehfact -680.2428342372154
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 singlet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmp314fsuy_
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[4.79749533 5.1502639  6.63926445]
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 triplet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmp314fsuy_
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[1.03563671 2.44754    3.62410242]
+Number of Active orbitals:  79
+Number of Virtual orbitals:  23
+Number of electrons in active space 120
+
+
+******** <class 'pyscf.scf.hf.RHF'> ********
+method = RHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 200
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpg1nfj2l0
+max_memory 4000 MB (current use 0 MB)
+Set gradient conv threshold to 3.16228e-05
+init E= -680.242834236196
+  HOMO = -0.162455595465609  LUMO = 0.134995256186496
+cycle= 1 E= -680.242834236162  delta_E= 3.43e-11  |g|= 1.29e-06  |ddm|= 4.52e-06
+  HOMO = -0.16245557165544  LUMO = 0.134995293441394
+Extra cycle  E= -680.242834236553  delta_E= -3.92e-10  |g|= 4.6e-07  |ddm|= 1.82e-06
+converged SCF energy = -680.242834236553
+ehfact -680.2428342365533
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 singlet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpg1nfj2l0
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[4.79004313 5.1499094  6.62651818]
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 triplet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpg1nfj2l0
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[1.03170726 2.4420096  3.61872252]
+Number of Active orbitals:  80
+Number of Virtual orbitals:  22
+Number of electrons in active space 120
+
+
+******** <class 'pyscf.scf.hf.RHF'> ********
+method = RHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 200
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpwfv7gdlz
+max_memory 4000 MB (current use 0 MB)
+Set gradient conv threshold to 3.16228e-05
+init E= -680.242834231911
+  HOMO = -0.162455595439016  LUMO = 0.13499525611973
+cycle= 1 E= -680.242834232103  delta_E= -1.93e-10  |g|= 1.3e-06  |ddm|= 4.58e-06
+  HOMO = -0.162455571812312  LUMO = 0.134995293405178
+Extra cycle  E= -680.242834231974  delta_E= 1.29e-10  |g|= 4.94e-07  |ddm|= 1.98e-06
+converged SCF energy = -680.242834231974
+ehfact -680.242834231974
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 singlet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpwfv7gdlz
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[4.76617677 5.14948973 6.60676347]
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 triplet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpwfv7gdlz
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[1.02401432 2.43787564 3.61472801]
+Number of Active orbitals:  81
+Number of Virtual orbitals:  21
+Number of electrons in active space 120
+
+
+******** <class 'pyscf.scf.hf.RHF'> ********
+method = RHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 200
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpoby5g317
+max_memory 4000 MB (current use 0 MB)
+Set gradient conv threshold to 3.16228e-05
+init E= -680.242834233001
+  HOMO = -0.162455595348896  LUMO = 0.134995256306722
+cycle= 1 E= -680.242834233145  delta_E= -1.44e-10  |g|= 1.31e-06  |ddm|= 4.62e-06
+  HOMO = -0.162455572566709  LUMO = 0.134995292665346
+Extra cycle  E= -680.242834233112  delta_E= 3.27e-11  |g|= 5.08e-07  |ddm|= 2.04e-06
+converged SCF energy = -680.242834233112
+ehfact -680.2428342331123
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 singlet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpoby5g317
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[4.7573338  5.1493597  6.59594371]
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 triplet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpoby5g317
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[1.01800464 2.4300097  3.60629376]
+Number of Active orbitals:  82
+Number of Virtual orbitals:  20
+Number of electrons in active space 120
+
+
+******** <class 'pyscf.scf.hf.RHF'> ********
+method = RHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 200
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpdg7gzfof
+max_memory 4000 MB (current use 0 MB)
+Set gradient conv threshold to 3.16228e-05
+init E= -680.242834240504
+  HOMO = -0.162455595533254  LUMO = 0.134995256195232
+cycle= 1 E= -680.242834240469  delta_E= 3.46e-11  |g|= 1.32e-06  |ddm|= 4.64e-06
+  HOMO = -0.162455573203301  LUMO = 0.134995292050905
+Extra cycle  E= -680.242834240737  delta_E= -2.68e-10  |g|= 5.18e-07  |ddm|= 2.07e-06
+converged SCF energy = -680.242834240737
+ehfact -680.2428342407372
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 singlet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpdg7gzfof
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[4.7502983  5.1492091  6.58786427]
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 triplet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpdg7gzfof
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[1.01374902 2.42377562 3.59986733]
+Number of Active orbitals:  83
+Number of Virtual orbitals:  19
+Number of electrons in active space 120
+
+
+******** <class 'pyscf.scf.hf.RHF'> ********
+method = RHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 200
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmp6o1c9kzz
+max_memory 4000 MB (current use 0 MB)
+Set gradient conv threshold to 3.16228e-05
+init E= -680.242834235965
+  HOMO = -0.162455595461212  LUMO = 0.134995256201644
+cycle= 1 E= -680.242834236051  delta_E= -8.59e-11  |g|= 1.32e-06  |ddm|= 4.67e-06
+  HOMO = -0.162455570420268  LUMO = 0.134995294545822
+Extra cycle  E= -680.24283423605  delta_E= 6.82e-13  |g|= 5.4e-07  |ddm|= 2.15e-06
+converged SCF energy = -680.24283423605
+ehfact -680.2428342360504
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 singlet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmp6o1c9kzz
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[4.73751344 5.14896801 6.57193289]
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 triplet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmp6o1c9kzz
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[1.01052173 2.42009569 3.59633639]
+Number of Active orbitals:  84
+Number of Virtual orbitals:  18
+Number of electrons in active space 120
+
+
+******** <class 'pyscf.scf.hf.RHF'> ********
+method = RHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 200
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpnq3qdqhr
+max_memory 4000 MB (current use 0 MB)
+Set gradient conv threshold to 3.16228e-05
+init E= -680.242834237979
+  HOMO = -0.162455595456051  LUMO = 0.134995256181185
+cycle= 1 E= -680.242834237986  delta_E= -6.82e-12  |g|= 1.33e-06  |ddm|= 4.71e-06
+  HOMO = -0.162455571801893  LUMO = 0.134995293125023
+Extra cycle  E= -680.242834238115  delta_E= -1.29e-10  |g|= 5.59e-07  |ddm|= 2.21e-06
+converged SCF energy = -680.242834238115
+ehfact -680.2428342381147
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 singlet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpnq3qdqhr
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[4.72170823 5.14863153 6.55374511]
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 triplet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpnq3qdqhr
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[1.00713388 2.41629889 3.59260943]
+Number of Active orbitals:  85
+Number of Virtual orbitals:  17
+Number of electrons in active space 120
+
+
+******** <class 'pyscf.scf.hf.RHF'> ********
+method = RHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 200
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpimv7e7i1
+max_memory 4000 MB (current use 0 MB)
+Set gradient conv threshold to 3.16228e-05
+init E= -680.242834238479
+  HOMO = -0.162455595508973  LUMO = 0.134995256156929
+cycle= 1 E= -680.242834238609  delta_E= -1.31e-10  |g|= 1.34e-06  |ddm|= 4.74e-06
+  HOMO = -0.162455571192832  LUMO = 0.134995293732246
+Extra cycle  E= -680.242834238722  delta_E= -1.13e-10  |g|= 5.76e-07  |ddm|= 2.26e-06
+converged SCF energy = -680.242834238722
+ehfact -680.2428342387225
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 singlet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpimv7e7i1
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[4.71409282 5.14850026 6.54384957]
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 triplet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpimv7e7i1
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[1.00434334 2.41094191 3.58641534]
+Number of Active orbitals:  86
+Number of Virtual orbitals:  16
+Number of electrons in active space 120
+
+
+******** <class 'pyscf.scf.hf.RHF'> ********
+method = RHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 200
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpmst_611k
+max_memory 4000 MB (current use 0 MB)
+Set gradient conv threshold to 3.16228e-05
+init E= -680.242834235855
+  HOMO = -0.162455595394895  LUMO = 0.134995256132013
+cycle= 1 E= -680.242834235705  delta_E= 1.5e-10  |g|= 1.36e-06  |ddm|= 4.8e-06
+  HOMO = -0.162455573567186  LUMO = 0.134995291539024
+Extra cycle  E= -680.242834235691  delta_E= 1.36e-11  |g|= 6.15e-07  |ddm|= 2.38e-06
+converged SCF energy = -680.242834235691
+ehfact -680.2428342356909
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 singlet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpmst_611k
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[4.68427071 5.14820965 6.51685789]
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 triplet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpmst_611k
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[0.99917416 2.40312734 3.57734076]
+Number of Active orbitals:  87
+Number of Virtual orbitals:  15
+Number of electrons in active space 120
+
+
+******** <class 'pyscf.scf.hf.RHF'> ********
+method = RHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 200
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpfc120wdd
+max_memory 4000 MB (current use 0 MB)
+Set gradient conv threshold to 3.16228e-05
+init E= -680.242834237409
+  HOMO = -0.162455595443389  LUMO = 0.134995256225528
+cycle= 1 E= -680.24283423744  delta_E= -3.09e-11  |g|= 1.37e-06  |ddm|= 4.83e-06
+  HOMO = -0.162455575912368  LUMO = 0.134995289099067
+Extra cycle  E= -680.242834237352  delta_E= 8.84e-11  |g|= 6.35e-07  |ddm|= 2.43e-06
+converged SCF energy = -680.242834237352
+ehfact -680.2428342373519
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 singlet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpfc120wdd
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[4.66677694 5.14782628 6.5033177 ]
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 triplet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpfc120wdd
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[0.99787552 2.40102175 3.57496927]
+Number of Active orbitals:  88
+Number of Virtual orbitals:  14
+Number of electrons in active space 120
+
+
+******** <class 'pyscf.scf.hf.RHF'> ********
+method = RHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 200
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpwf8kkbdr
+max_memory 4000 MB (current use 0 MB)
+Set gradient conv threshold to 3.16228e-05
+init E= -680.242834239337
+  HOMO = -0.162455595440122  LUMO = 0.134995256234284
+cycle= 1 E= -680.242834239366  delta_E= -2.91e-11  |g|= 1.38e-06  |ddm|= 4.86e-06
+  HOMO = -0.162455576415674  LUMO = 0.134995288609747
+Extra cycle  E= -680.242834239434  delta_E= -6.8e-11  |g|= 6.61e-07  |ddm|= 2.52e-06
+converged SCF energy = -680.242834239434
+ehfact -680.2428342394337
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 singlet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpwf8kkbdr
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[4.65723745 5.14756171 6.49563593]
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 triplet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpwf8kkbdr
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[0.99407737 2.39873484 3.57305756]
+Number of Active orbitals:  89
+Number of Virtual orbitals:  13
+Number of electrons in active space 120
+
+
+******** <class 'pyscf.scf.hf.RHF'> ********
+method = RHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 200
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmp0vb35mzj
+max_memory 4000 MB (current use 0 MB)
+Set gradient conv threshold to 3.16228e-05
+init E= -680.242834237447
+  HOMO = -0.162455595445831  LUMO = 0.134995256293756
+cycle= 1 E= -680.242834237298  delta_E= 1.49e-10  |g|= 1.39e-06  |ddm|= 4.9e-06
+  HOMO = -0.162455575205806  LUMO = 0.134995289716725
+Extra cycle  E= -680.242834237484  delta_E= -1.87e-10  |g|= 6.85e-07  |ddm|= 2.59e-06
+converged SCF energy = -680.242834237484
+ehfact -680.2428342374844
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 singlet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmp0vb35mzj
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[4.64876639 5.1474193  6.48437013]
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 triplet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmp0vb35mzj
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[0.9912214  2.39520392 3.56919336]
+Number of Active orbitals:  90
+Number of Virtual orbitals:  12
+Number of electrons in active space 120
+
+
+******** <class 'pyscf.scf.hf.RHF'> ********
+method = RHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 200
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpc8y1tdn1
+max_memory 4000 MB (current use 0 MB)
+Set gradient conv threshold to 3.16228e-05
+init E= -680.242834236477
+  HOMO = -0.162455595409657  LUMO = 0.134995256253385
+cycle= 1 E= -680.24283423665  delta_E= -1.73e-10  |g|= 1.4e-06  |ddm|= 4.96e-06
+  HOMO = -0.1624555772822  LUMO = 0.134995287816225
+Extra cycle  E= -680.24283423658  delta_E= 7e-11  |g|= 7.09e-07  |ddm|= 2.65e-06
+converged SCF energy = -680.24283423658
+ehfact -680.2428342365797
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 singlet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpc8y1tdn1
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[4.63359288 5.14722029 6.44320318]
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 triplet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpc8y1tdn1
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[0.98702033 2.38800385 3.56162822]
+Number of Active orbitals:  91
+Number of Virtual orbitals:  11
+Number of electrons in active space 120
+
+
+******** <class 'pyscf.scf.hf.RHF'> ********
+method = RHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 200
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmp1fzqspr9
+max_memory 4000 MB (current use 0 MB)
+Set gradient conv threshold to 3.16228e-05
+init E= -680.242834235845
+  HOMO = -0.162455595354053  LUMO = 0.134995256206444
+cycle= 1 E= -680.242834236051  delta_E= -2.06e-10  |g|= 1.41e-06  |ddm|= 4.98e-06
+  HOMO = -0.162455577836833  LUMO = 0.134995287037479
+Extra cycle  E= -680.242834236045  delta_E= 5.68e-12  |g|= 7.23e-07  |ddm|= 2.69e-06
+converged SCF energy = -680.242834236045
+ehfact -680.2428342360449
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 singlet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmp1fzqspr9
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[4.62404901 5.14702391 6.42419333]
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 triplet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmp1fzqspr9
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[0.98552793 2.38573847 3.5597651 ]
+Number of Active orbitals:  92
+Number of Virtual orbitals:  10
+Number of electrons in active space 120
+
+
+******** <class 'pyscf.scf.hf.RHF'> ********
+method = RHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 200
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmp8bi9zu6s
+max_memory 4000 MB (current use 0 MB)
+Set gradient conv threshold to 3.16228e-05
+init E= -680.242834234741
+  HOMO = -0.162455595497111  LUMO = 0.134995256169805
+cycle= 1 E= -680.242834234845  delta_E= -1.04e-10  |g|= 1.42e-06  |ddm|= 5.01e-06
+  HOMO = -0.162455579267205  LUMO = 0.13499528573064
+Extra cycle  E= -680.242834234846  delta_E= -1.36e-12  |g|= 7.41e-07  |ddm|= 2.75e-06
+converged SCF energy = -680.242834234846
+ehfact -680.2428342348464
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 singlet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmp8bi9zu6s
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[4.61103325 5.14688517 6.4017155 ]
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 triplet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmp8bi9zu6s
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[0.98311723 2.38229499 3.55592556]
+Number of Active orbitals:  93
+Number of Virtual orbitals:  9
+Number of electrons in active space 120
+
+
+******** <class 'pyscf.scf.hf.RHF'> ********
+method = RHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 200
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmp5hafkxfr
+max_memory 4000 MB (current use 0 MB)
+Set gradient conv threshold to 3.16228e-05
+init E= -680.242834236057
+  HOMO = -0.162455595498781  LUMO = 0.134995256271211
+cycle= 1 E= -680.242834236062  delta_E= -4.55e-12  |g|= 1.42e-06  |ddm|= 5.03e-06
+  HOMO = -0.162455580691614  LUMO = 0.134995284451466
+Extra cycle  E= -680.242834236165  delta_E= -1.03e-10  |g|= 7.61e-07  |ddm|= 2.8e-06
+converged SCF energy = -680.242834236165
+ehfact -680.2428342361645
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 singlet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmp5hafkxfr
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[4.59439365 5.14664578 6.37924475]
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 triplet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmp5hafkxfr
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[0.97987147 2.37842366 3.55176883]
+Number of Active orbitals:  94
+Number of Virtual orbitals:  8
+Number of electrons in active space 120
+
+
+******** <class 'pyscf.scf.hf.RHF'> ********
+method = RHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 200
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpul5u1bh1
+max_memory 4000 MB (current use 0 MB)
+Set gradient conv threshold to 3.16228e-05
+init E= -680.242834237159
+  HOMO = -0.162455595444433  LUMO = 0.134995256142541
+cycle= 1 E= -680.242834237202  delta_E= -4.27e-11  |g|= 1.43e-06  |ddm|= 5.05e-06
+  HOMO = -0.162455579587672  LUMO = 0.134995285366381
+Extra cycle  E= -680.242834237097  delta_E= 1.05e-10  |g|= 7.84e-07  |ddm|= 2.89e-06
+converged SCF energy = -680.242834237097
+ehfact -680.2428342370965
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 singlet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpul5u1bh1
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[4.57014952 5.14629412 6.36908527]
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 triplet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpul5u1bh1
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[0.97645095 2.37601125 3.54939281]
+Number of Active orbitals:  95
+Number of Virtual orbitals:  7
+Number of electrons in active space 120
+
+
+******** <class 'pyscf.scf.hf.RHF'> ********
+method = RHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 200
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpywtpaess
+max_memory 4000 MB (current use 0 MB)
+Set gradient conv threshold to 3.16228e-05
+init E= -680.242834236682
+  HOMO = -0.16245559542685  LUMO = 0.13499525616954
+cycle= 1 E= -680.2428342366  delta_E= 8.21e-11  |g|= 1.44e-06  |ddm|= 5.09e-06
+  HOMO = -0.162455580922892  LUMO = 0.134995284117053
+Extra cycle  E= -680.242834236716  delta_E= -1.17e-10  |g|= 8.17e-07  |ddm|= 2.99e-06
+converged SCF energy = -680.242834236716
+ehfact -680.2428342367164
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 singlet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpywtpaess
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[4.54635707 5.14586445 6.35165858]
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 triplet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpywtpaess
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[0.97292825 2.37346856 3.54680811]
+Number of Active orbitals:  96
+Number of Virtual orbitals:  6
+Number of electrons in active space 120
+
+
+******** <class 'pyscf.scf.hf.RHF'> ********
+method = RHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 200
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmphlv4m1up
+max_memory 4000 MB (current use 0 MB)
+Set gradient conv threshold to 3.16228e-05
+init E= -680.242834236472
+  HOMO = -0.162455595454386  LUMO = 0.134995256169774
+cycle= 1 E= -680.242834236548  delta_E= -7.59e-11  |g|= 1.45e-06  |ddm|= 5.12e-06
+  HOMO = -0.16245558192893  LUMO = 0.134995283120085
+Extra cycle  E= -680.242834236591  delta_E= -4.3e-11  |g|= 8.43e-07  |ddm|= 3.07e-06
+converged SCF energy = -680.242834236591
+ehfact -680.2428342365911
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 singlet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmphlv4m1up
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[4.52345448 5.14540791 6.3301416 ]
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 triplet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmphlv4m1up
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[0.96952245 2.37124801 3.54445687]
+Number of Active orbitals:  97
+Number of Virtual orbitals:  5
+Number of electrons in active space 120
+
+
+******** <class 'pyscf.scf.hf.RHF'> ********
+method = RHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 200
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmppmmvdbhi
+max_memory 4000 MB (current use 0 MB)
+Set gradient conv threshold to 3.16228e-05
+init E= -680.242834236144
+  HOMO = -0.162455595409384  LUMO = 0.134995256175272
+cycle= 1 E= -680.242834236147  delta_E= -3.64e-12  |g|= 1.46e-06  |ddm|= 5.15e-06
+  HOMO = -0.162455583060703  LUMO = 0.134995281901153
+Extra cycle  E= -680.242834236171  delta_E= -2.32e-11  |g|= 8.55e-07  |ddm|= 3.1e-06
+converged SCF energy = -680.242834236171
+ehfact -680.2428342361707
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 singlet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmppmmvdbhi
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[4.51068244 5.14531274 6.30514607]
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 triplet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmppmmvdbhi
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[0.96750443 2.36822558 3.54136093]
+Number of Active orbitals:  98
+Number of Virtual orbitals:  4
+Number of electrons in active space 120
+
+
+******** <class 'pyscf.scf.hf.RHF'> ********
+method = RHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 200
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpnmh0qrvy
+max_memory 4000 MB (current use 0 MB)
+Set gradient conv threshold to 3.16228e-05
+init E= -680.242834237553
+  HOMO = -0.162455595418105  LUMO = 0.134995256222586
+cycle= 1 E= -680.242834237647  delta_E= -9.41e-11  |g|= 1.47e-06  |ddm|= 5.17e-06
+  HOMO = -0.162455583666351  LUMO = 0.134995281459253
+Extra cycle  E= -680.242834237588  delta_E= 5.84e-11  |g|= 8.7e-07  |ddm|= 3.14e-06
+converged SCF energy = -680.242834237588
+ehfact -680.2428342375883
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 singlet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpnmh0qrvy
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[4.50099204 5.14510351 6.29094168]
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 triplet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpnmh0qrvy
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[0.96528242 2.36494967 3.53799752]
+Number of Active orbitals:  99
+Number of Virtual orbitals:  3
+Number of electrons in active space 120
+
+
+******** <class 'pyscf.scf.hf.RHF'> ********
+method = RHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 200
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpvf12v1n9
+max_memory 4000 MB (current use 0 MB)
+Set gradient conv threshold to 3.16228e-05
+init E= -680.242834237036
+  HOMO = -0.162455595460224  LUMO = 0.13499525617277
+cycle= 1 E= -680.24283423705  delta_E= -1.39e-11  |g|= 1.47e-06  |ddm|= 5.19e-06
+  HOMO = -0.162455583752015  LUMO = 0.134995281328372
+Extra cycle  E= -680.242834237046  delta_E= 3.64e-12  |g|= 8.81e-07  |ddm|= 3.18e-06
+converged SCF energy = -680.242834237046
+ehfact -680.2428342370463
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 singlet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpvf12v1n9
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[4.49064001 5.14501779 6.26982271]
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 triplet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpvf12v1n9
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[0.9637476  2.36249386 3.53576239]
+Number of Active orbitals:  100
+Number of Virtual orbitals:  2
+Number of electrons in active space 120
+
+
+******** <class 'pyscf.scf.hf.RHF'> ********
+method = RHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 200
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmp_oib9cre
+max_memory 4000 MB (current use 0 MB)
+Set gradient conv threshold to 3.16228e-05
+init E= -680.242834236638
+  HOMO = -0.16245559545187  LUMO = 0.134995256173077
+cycle= 1 E= -680.242834236639  delta_E= -6.82e-13  |g|= 1.48e-06  |ddm|= 5.21e-06
+  HOMO = -0.162455584767263  LUMO = 0.134995280368687
+Extra cycle  E= -680.242834236687  delta_E= -4.77e-11  |g|= 8.93e-07  |ddm|= 3.2e-06
+converged SCF energy = -680.242834236687
+ehfact -680.2428342366866
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 singlet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmp_oib9cre
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[4.48062674 5.14491023 6.25074959]
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 triplet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmp_oib9cre
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[0.9617609  2.35858869 3.53122581]
+Number of Active orbitals:  101
+Number of Virtual orbitals:  1
+Number of electrons in active space 120
+
+
+******** <class 'pyscf.scf.hf.RHF'> ********
+method = RHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 200
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpbtodwtxk
+max_memory 4000 MB (current use 0 MB)
+Set gradient conv threshold to 3.16228e-05
+init E= -680.242834236788
+  HOMO = -0.162455595462914  LUMO = 0.134995256199488
+cycle= 1 E= -680.242834236807  delta_E= -1.96e-11  |g|= 1.48e-06  |ddm|= 5.23e-06
+  HOMO = -0.162455586113336  LUMO = 0.134995279110799
+Extra cycle  E= -680.242834236807  delta_E= 2.27e-13  |g|= 9.07e-07  |ddm|= 3.25e-06
+converged SCF energy = -680.242834236807
+ehfact -680.2428342368071
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 singlet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpbtodwtxk
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[4.46799305 5.14484477 6.24005981]
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 triplet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmpbtodwtxk
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[0.95868081 2.35652548 3.52933435]
+Number of Active orbitals:  102
+Number of Virtual orbitals:  0
+Number of electrons in active space 120
+
+
+******** <class 'pyscf.scf.hf.RHF'> ********
+method = RHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 200
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmprsel6mb2
+max_memory 4000 MB (current use 0 MB)
+Set gradient conv threshold to 3.16228e-05
+init E= -680.242834236566
+  HOMO = -0.162455595448559  LUMO = 0.134995256193642
+cycle= 1 E= -680.242834236567  delta_E= -1.36e-12  |g|= 1.48e-06  |ddm|= 5.25e-06
+  HOMO = -0.162455586396386  LUMO = 0.134995278802397
+Extra cycle  E= -680.242834236567  delta_E= 4.55e-13  |g|= 9.2e-07  |ddm|= 3.28e-06
+converged SCF energy = -680.242834236567
+ehfact -680.2428342365668
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 singlet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmprsel6mb2
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[4.45398418 5.14468871 6.22785135]
+
+
+******** <class 'pyscf.tdscf.rhf.TDA'> for <class 'pyscf.scf.hf.RHF'> ********
+nstates = 3 triplet
+wfnsym = None
+conv_tol = 1e-09
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_space = 50
+eigh max_cycle = 100
+chkfile = /var/folders/hp/yh69tch14pl51f6l0lmkph040000gn/T/tmprsel6mb2
+max_memory 4000 MB (current use 0 MB)
+
+
+Excited State energies (eV)
+[0.95622079 2.35364444 3.52607921]

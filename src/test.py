@@ -1,12 +1,18 @@
-# Create an instance
-from water_geo import water
-from src import Pyscf_helper
+import pyscf
+import matplotlib.pyplot as plt
+import numpy as np
+import json
+
+from pyscf import gto, scf, tdscf
+from geometry.water_geo import water
+from Pyscf_helper import Pyscf_helper
+from Active_space_helper import Active_space_helper
 
 molecule = water
 spin = 0
 basis_set = 'sto-3g'
 
-# Initialize Pyscf_helper
+# Create an instance Initialize Pyscf_helper
 scf_water_init = Pyscf_helper()
 
 # Run SCF calculation
