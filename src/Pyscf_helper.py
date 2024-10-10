@@ -26,7 +26,7 @@ class Pyscf_helper:
 
         core_hamiltonian = mean_field.get_hcore()
         mo_energy = mean_field.mo_energy
-        mo_occ = mean_field.get_occ(mo_energy)
+        y = mean_field.get_occ(mo_energy)
         overlap = mean_field.get_ovlp()
         coeff = mean_field.mo_coeff
         fock_matrix = mean_field.get_fock()

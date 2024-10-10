@@ -4,20 +4,21 @@ class Active_space_helper:
         pass
     
     def get_state_averaged_rdm(self, orbital_type, coeff, reduced_density, overlap, n_electrons, n_singlets, n_triplets):
-        if orbital_type = "natural orbitals" 
+        state_averaged_reduced_density = reduced_density / (n_singlets + n_triplets + 1) 
         
-
-        elif orbital_type = "canonical orbitals"
-            state_averaged_reduced_density = reduced_density / (n_singlets + n_triplets + 1)
-            canonical_reduced_density = coeff.T @ overlap @ reduced_density @ overlap @ coeff
+        if orbital_type == "natural orbitals": 
+            natural_density = coeff.T @ overlap @ reduced_density @ overlap @ coeff
             # np.savetxt("no_avg_rdm", reduced_density, fmt='%1.13f')
-            D_evals, D_evecs = np.linalg.eigh(reduced_density)
+            D_evals, D_evecs = np.linalg.eigh(natural_density)
             sorted_list = np.argsort(D_evals)[::-1]
             D_evals = D_evals[sorted_list] 
             # np.savetxt("Density matrix eigenvalues and eigenvectors", D_evals, fmt='%1.13f')
             D_evecs = D_evecs[:,sorted_list]
-            NO = coeff @ D_evecs
-        return reduced_density, D_evals, D_evecs
+            C = coeff @ D_evecs        
+            return C, reduced_density, D_evals, D_evecs
+        elif orbital_type == "canonical orbitals":
+            C = coeff
+            return C, reduced_density
 
     def tda_density_matrix(self, td, state_id):
         '''
@@ -41,69 +42,58 @@ class Active_space_helper:
         dm = np.einsum('pi,ij,qj->pq', mo, dm, mo.conj())
         return dm
     
-    def generate_active_space(self, active_space_type, n_electrons, mo_occ):
+    def generate_active_space(self, C, active_space_type, n_electrons, mo_occ):
         HOMO_index = np.where(mo_occ == 2)[0][-1]
         LUMO_index = HOMO_index + 1
+        smaller_index = min(HOMO_index, LUMO_index)
+        n_orbital = len(mo_occ)
 
         active_list = []
+        virtual_list = []
         double_occupied_list = []
 
-        active_sizes = []
-
         if active_space_type = "Increasing both occupied and virtual orbital"
-            w = round(num_orbitals - 0.5 * n_elec)
-            print('w = ', w)
-            for i in range(0, w -1):
-                active_sizes.append(2*i)
+            for i in smaller_index:
+                n_active_orbital = len(active_list)
+                double_occupied_list = list(range(HOMO_index-i))
+                active_list = list(range(HOMO_index-i, LUMO_index+i+1))
+                virtual_list = list(range(LUMO_index+i+1, n_orbital))
 
-                occ_list = list(range(0,HOMO_index-i))
-                act_list = list(range(HOMO_index - i, LUMO_index+i+1))
-                vir_list = list(range(LUMO_index + i +1, num_orbitals))
-
-                print('actlist',act_list)
-                act_array = np.array(act_list)
-
-                Cocc = C[:, occ_list]
-                occ_occ = mo_occ[occ_list]
+                occupied = C[:, double_occupied_list]
+                occ_occ = mo_occ[double_occupied_list]
                 occ_occ = np.array(occ_occ)
 
-                Cact = C[:, act_list]
-                act_occ = mo_occ[act_list]
+                active = C[:, active_list]
+                act_occ = mo_occ[active_list]
                 act_occ = np.array(act_occ)
-
-            #molden.from_mo(mol, 'ttc_act.molden',Cact)
-
-                Cvir = C[:, vir_list]
-                vir_occ = mo_occ[vir_list]
+                    
+                virtual = C[:, virtual_list]
+                vir_occ = mo_occ[virtual_list]
                 vir_occ = np.array(vir_occ)
 
-                nact = len(act_list)
-                nvir = len(vir_list)
-                nocc = len(occ_list)
+                nact = len(active)
+                nvir = len(virtual_list)
+                nocc = len(occupied)
+
+                return active, virtual, occupied, nact, nvir, nocc
 
         if active_space_type = "Increasing occupied orbital"
-            w = round(num_orbitals - 0.5 * n_elec)
-            print('w = ', w)
-            mo_occ = mo_occ[::-1]
-            for i in range(1, w):
-                active_sizes.append(i)
+            for i in smaller_index:
+                n_active_orbital = len(active_list)
+                double_occupied_list = list(range(HOMO_index-i))
+                active_list = list(range(HOMO_index-i, LUMO_index))
+                virtual_list = list(range(LUMO_index + 1, n_orbital))
 
-                act_list = list(range(w - i, num_orbitals))
-                vir_list = list(range(0, w -i))
-
-                act_array = np.array(act_list)
-
-                Cact = NO[:, act_list]
-                act_occ = D_evals[act_list]
+                active = C[:, active_list]
+                act_occ = D_evals[active_list]
                 act_occ = np.array(act_occ)
 
-                Cvir = NO[:, vir_list]
-                vir_occ = D_evals[vir_list]
+                Cvir = NO[:, virtual_list]
+                vir_occ = D_evals[virtual_list]
                 vir_occ = np.array(vir_occ)
 
-            #molden.from_mo(mol, 'ttc_act.molden',Cact)
-                nact = len(act_list)
-                nvir = len(vir_list)
+                nact = len(active_list)
+                nvir = len(virtual_list)
 
         if active_space_type = "Increasing virtual orbital"
             #allvir
@@ -113,22 +103,20 @@ class Active_space_helper:
             for i in range(1, w):
                 active_sizes.append(i)
 
-                act_list = list(range(0, num_orbitals-w+i))
-                vir_list = list(range(num_orbitals-w+i, num_orbitals))
+                active_list = list(range(0, num_orbitals-w+i))
+                virtual_list = list(range(num_orbitals-w+i, num_orbitals))
 
-                act_array = np.array(act_list)
-
-                Cact = NO[:, act_list]
-                act_occ =  D_evals[act_list]
+                Cact = NO[:, active_list]
+                act_occ =  D_evals[active_list]
                 act_occ = np.array(act_occ)
 
-                Cvir = NO[:, vir_list]
-                vir_occ = D_evals[vir_list]
+                Cvir = NO[:, virtual_list]
+                vir_occ = D_evals[virtual_list]
                 vir_occ = np.array(vir_occ)
 
             #molden.from_mo(mol, 'ttc_act.molden',Cact)
-                nact = len(act_list)
-                nvir = len(vir_list)
+                nact = len(active_list)
+                nvir = len(virtual_list)
 
         return LUMO_index, HOMO_index, act_occ, vir_occ
         
@@ -138,3 +126,5 @@ class Active_space_helper:
         
 
         if orbital_type = "canonical orbitals"
+
+

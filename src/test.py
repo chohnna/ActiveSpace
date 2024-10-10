@@ -29,3 +29,8 @@ print("CIS Triplet Energy:", cis_triplet_E)
 
 active_space_type = "Increasing both occupied and virtual orbital" # "Increasing occupied orbital", "Increasing virtual orbital"
 orbital_type = "natural orbitals" # "canonical orbitals"
+
+active_space_init = Active_space_helper()
+active_space = generate_active_space(self, C, active_space_type, n_electrons, mo_occ)
+
+calculate_active_space = calculate_in_active_space(active_space)
