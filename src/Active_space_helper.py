@@ -1,3 +1,66 @@
+class Pyscf_helper:
+    # Constructor
+    def __init__(self):
+        # Instance variables
+        self.mf = None
+        self.mol = None
+        self.h = None
+        self.g = None
+        self.n_orb = None
+        self.C = None
+        self.S = None
+        self.J = None
+        self.K = None
+        self.F = None
+
+    # Methods
+    def pyscf_scf(self, molecule, spin, basis_set):
+        mol = gto.Mole()
+        mol.atom = molecule
+        mol.basis = basis_set
+        mol.spin = spin
+        mol.build()
+
+        mean_field = scf.RHF(mol).run(verbose=4)
+        mean_field.analyze()
+        self.mf = mean_field
+
+        core_hamiltonian = mean_field.get_hcore()
+        mo_energy = mean_field.mo_energy
+        mo_occ = mean_field.get_occ(mo_energy)
+        overlap = mean_field.get_ovlp()
+        coeff = mean_field.mo_coeff
+        fock_matrix = mean_field.get_fock()
+        density = mean_field.make_rdm1()
+        n_electrons = 2*round(0.5 * np.trace(density@overlap))
+        n_orb = len(mo_occ)
+
+        return core_hamiltonian, mo_energy, n_orb, n_electrons, mo_occ, overlap, coeff, fock_matrix, density
+    
+    def configuration_interaction_singles(self, n_singlets, n_triplets):
+        density_singlet = 0
+        density_triplet = 0
+
+        # Compute singlets
+        mytd_singlet = tdscf.TDA(self.mf)
+        mytd_singlet.singlet = True
+        mytd_singlet = mytd_singlet.run(nstates=n_singlets)
+        mytd_singlet.analyze()
+        cis_singlet_E = min(mytd_singlet.kernel()[0])
+        for i in range(mytd_singlet.nroots):
+            density_singlet += self.tda_density_matrix(mytd_singlet, i)
+        
+        # Compute triplets
+        mytd_triplet = tdscf.TDA(self.mf)
+        mytd_triplet.singlet = False
+        mytd_triplet = mytd_triplet.run(nstates=n_triplets)
+        mytd_triplet.analyze()
+        cis_triplet_E = min(mytd_triplet.kernel()[0])
+        for i in range(mytd_triplet.nroots):
+            density_triplet += self.tda_density_matrix(mytd_triplet, i)
+        
+        return cis_singlet_E, density_singlet, cis_triplet_E, density_triplet
+    
 
 class Active_space_helper:
     def __init__(self) -> None:
@@ -54,7 +117,7 @@ class Active_space_helper:
 
         if active_space_type = "Increasing both occupied and virtual orbital"
             for i in smaller_index:
-                n_active_orbital = len(active_list)
+            
                 double_occupied_list = list(range(HOMO_index-i))
                 active_list = list(range(HOMO_index-i, LUMO_index+i+1))
                 virtual_list = list(range(LUMO_index+i+1, n_orbital))
@@ -75,7 +138,8 @@ class Active_space_helper:
                 nvir = len(virtual_list)
                 nocc = len(occupied)
 
-                return active, virtual, occupied, nact, nvir, nocc
+            n_active_orbital = len(active_list)
+            return active, virtual, occupied, nact, nvir, nocc, n_active_orbital
 
         if active_space_type = "Increasing occupied orbital"
             for i in smaller_index:
@@ -94,6 +158,8 @@ class Active_space_helper:
 
                 nact = len(active_list)
                 nvir = len(virtual_list)
+            n_active_orbital = len(active_list)
+            return active, virtual, occupied, nact, nvir, nocc, n_active_orbital
 
         if active_space_type = "Increasing virtual orbital"
             #allvir
@@ -118,6 +184,9 @@ class Active_space_helper:
                 nact = len(active_list)
                 nvir = len(virtual_list)
 
+        n_active_orbital = len(active_list)
+        return active, virtual, occupied, nact, nvir, nocc, n_active_orbital
+
         return LUMO_index, HOMO_index, act_occ, vir_occ
         
 
@@ -128,3 +197,38 @@ class Active_space_helper:
         if orbital_type = "canonical orbitals"
 
 
+
+class plot:
+    def __init__(self):
+        
+
+    def plot(self, n_active_orbital,  ):
+        plt.figure(figsize=(15, 6))
+
+        plt.subplot(1, 2, 1)
+        plt.plot(active_sizes, elists_no, marker='o', linestyle='-', label='CIS_act')
+        plt.axhline(y=e_s_cis, color='blue', linestyle='--', label='CIS')
+        # plt.axhline(y=e_s, color='black', linestyle='--', label='EOM-CCSD')
+        # plt.axhline(y=e_dft_s, color='red', linestyle='--', label='TDDFT')
+        plt.xlabel('# of orbitals in active space')
+        plt.ylabel('Excited State energies (eV)')
+        plt.title('Excitation energy of active space; Singlets')
+        plt.grid(True)
+        plt.legend()
+        plt.tight_layout()
+
+        plt.subplot(1, 2, 2)
+        plt.plot(active_sizes_can, elistt_no, marker='o', linestyle='-', label='CIS_act')
+        plt.axhline(y=e_t_cis, color='blue', linestyle='--', label='CIS')
+        # plt.axhline(y=e_t, color='black', linestyle='--', label='EOM-CCSD')
+        # plt.axhline(y=e_dft_t, color='red', linestyle='--', label='TDDFT')
+        plt.xlabel('# of orbitals in active space')
+        plt.ylabel('Excited State energies (eV)')
+        plt.title('Excitation energy of active space; Triplets')
+        plt.grid(True)
+        plt.legend()
+        plt.tight_layout()
+
+        file_name = "no_HL_plots.png"
+        plt.savefig(file_name)
+        plt.show()
