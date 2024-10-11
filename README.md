@@ -8,14 +8,29 @@ This project performs quantum chemistry calculations using the PySCF library. Th
 ```
 ActiveSpace/
 │
+├── LICENSE
+├── README.md
+│
+├── Tutorials/
+│   └── activespace.ipynb        # Jupyter notebook tutorial
+│
+├── doc/
+│   └── literature_review.pdf    # Background and theory about the project
+│
 ├── src/
-│   ├── helper.py         # Contains helper classes for SCF, active space generation, and embedding potential calculations
-│   └── test.py           # Script to test the functionality of helper.py
+│   ├── __init__.py              # Initialize the module (if necessary)
+│   ├── helper.py                # Core Python scripts for calculations
+│   ├── rasci.jl                 # Julia script for RAS-CI
+│   └── test.py                  # Test scripts for unit tests
 │
-├── geometry/
-│   └── water_geo.py      # Contains the water molecule geometry (or other molecules for testing)
+├── data/                        # Contains output data, example files, and images
+│   ├── plots/
+│   │   └── ... (plot images)
+│   ├── output/                  # All output files
+│   ├── geometry/                # Store molecular geometry files
+│   └── example/                 # Store example files
 │
-└── README.md             # Project documentation
+└── .gitignore                   # Add .gitignore to exclude __pycache__ and other unnecessary files
 ```
 
 ## Requirements
