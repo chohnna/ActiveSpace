@@ -1,11 +1,8 @@
 import pyscf
 import matplotlib.pyplot as plt
 import numpy as np
-import json
-
 from pyscf import gto, scf, tdscf
-from geometry.water_geo import water
-from helper import *
+
 
 class Pyscf_helper:
     # Constructor
@@ -34,7 +31,7 @@ class Pyscf_helper:
 
         self.mean_field = scf.RHF(mol).run(verbose=4)
         self.mean_field.analyze()
-        
+
         # Assign the values to instance variables
         self.core_hamiltonian = self.mean_field.get_hcore()
         self.mo_energy = self.mean_field.mo_energy
@@ -59,7 +56,6 @@ class Pyscf_helper:
             'density_matrix': self.density_matrix
         }
 
-    
     def tda_density_matrix(self, td, state_id):
         """
         Taking the TDA amplitudes as the CIS coefficients, calculate the density
@@ -78,9 +74,8 @@ class Pyscf_helper:
         return dm
 
     def configuration_interaction_singles(self, n_singlets, n_triplets):
-        
         density_singlet = 0
-        density_triplet = 0     
+        density_triplet = 0
 
         # Compute singlets
         singlet_excitation = tdscf.TDA(self.mean_field)
@@ -90,7 +85,7 @@ class Pyscf_helper:
         cis_singlet_E = min(singlet_excitation.kernel()[0])
         for i in range(singlet_excitation.nroots):
             density_singlet += self.tda_density_matrix(singlet_excitation, i)
-        
+
         # Compute triplets
         triplet_excitation = tdscf.TDA(self.mean_field)
         triplet_excitation.singlet = False
@@ -99,38 +94,30 @@ class Pyscf_helper:
         cis_triplet_E = min(triplet_excitation.kernel()[0])
         for i in range(triplet_excitation.nroots):
             density_triplet += self.tda_density_matrix(triplet_excitation, i)
-        
+
         return cis_singlet_E, cis_triplet_E, density_singlet, density_triplet
-    
 
 class Active_space_helper:
     def __init__(self) -> None:
         pass
-    
-    def get_state_averaged_rdm(self, orbital_type, coeff, reduced_density, overlap, n_singlets, n_triplets):
-        """
-        Calculate state-averaged reduced density matrix based on orbital type.
-        """
-        state_averaged_rdm = reduced_density / (n_singlets + n_triplets + 1) 
-        
-        if orbital_type == "natural orbitals": 
-            natural_density = coeff.T @ overlap @ reduced_density @ overlap @ coeff
-            D_evals, D_evecs = np.linalg.eigh(natural_density)
-            sorted_list = np.argsort(D_evals)[::-1]
-            D_evals = D_evals[sorted_list] 
-            D_evecs = D_evecs[:, sorted_list]
-            coeff = coeff @ D_evecs        
-            return coeff, natural_density, D_evals, D_evecs
-        
-        elif orbital_type == "canonical orbitals":
-            return coeff, state_averaged_rdm
+class Active_space_helper:
+    def __init__(self) -> None:
+        pass
+
+class Active_space_helper:
+    def __init__(self) -> None:
+        pass
+
+class Active_space_helper:
+    def __init__(self) -> None:
+        pass
 
     def generate_active_space(self, C, active_space_type, overlap, n_electrons, mo_occ):
         """
         Generate active space based on the type of active space selection.
         """
-        HOMO_index = np.where(mo_occ == 2)[0][-1]
-        LUMO_index = HOMO_index + 1
+        HOMO_index = np.where(mo_occ == 2)[0][-1]  # Highest occupied molecular orbital index
+        LUMO_index = HOMO_index + 1  # Lowest unoccupied molecular orbital index
         n_orbitals = len(mo_occ)
         n_columns = C.shape[1]  # Number of columns in C (molecular orbitals)
 
@@ -149,67 +136,105 @@ class Active_space_helper:
                 active_list = list(range(HOMO_index - i, LUMO_index))
                 virtual_list = list(range(LUMO_index + 1, n_orbitals))
 
-            elif active_space_type == "Increasing virtual orbital":  
+            elif active_space_type == "Increasing virtual orbital":
                 active_list = list(range(0, n_orbitals - i))
                 virtual_list = list(range(n_orbitals - i, n_orbitals))
 
             # Ensure indices are within bounds of C
-            active_list = [a for a in active_list if a < n_columns]
-            virtual_list = [v for v in virtual_list if v < n_columns]
-            double_occupied_list = [d for d in double_occupied_list if d < n_columns]
+            active_list = [a for a in active_list if a < n_columns and a >= 0]
+            virtual_list = [v for v in virtual_list if v < n_columns and v >= 0]
+            double_occupied_list = [d for d in double_occupied_list if d < n_columns and d >= 0]
+
+            # Skip if no valid orbitals are selected or if index is 0
+            if len(active_list) == 0 or len(virtual_list) == 0 or len(double_occupied_list) == 0:
+                print("Skipping active space generation: No valid orbitals selected.")
+                continue
 
             # Create orbitals from the coefficients
-            occupied = C[:, double_occupied_list]
-            active = C[:, active_list]
-            virtual = C[:, virtual_list]
+            occupied = C[:, double_occupied_list] if double_occupied_list else np.array([])  # Handle empty arrays
+            active = C[:, active_list] if active_list else np.array([])
+            virtual = C[:, virtual_list] if virtual_list else np.array([])
+
+            # Ensure electron counts match the total electron count (Nalpha + Nbeta)
+            n_occ_electrons = 2 * len(double_occupied_list)  # Occupied orbitals contribute 2 electrons each
+            n_act_electrons = len(active_list)  # Active orbitals contribute 1 electron each
+            total_electrons = n_occ_electrons + n_act_electrons
+
+            if total_electrons != n_electrons:
+                print(f"Skipping active space: Electron count {total_electrons} does not match expected {n_electrons}.")
+                continue
+
+            # Print debug information
+            print(f"Occupied orbitals: {occupied.shape}")
+            print(f"Active orbitals: {active.shape}")
+            print(f"Virtual orbitals: {virtual.shape}")
+
+            # Break if any of the orbital lists are empty, indicating no valid orbitals
+            if occupied.size == 0 or active.size == 0 or virtual.size == 0:
+                print("Skipping calculation: One of the orbital lists is empty.")
+                break
 
         # Return active space information
         n_active_orbitals = len(active_list)
         return active, virtual, occupied, len(active), len(virtual_list), len(double_occupied_list), n_active_orbitals
 
-
     def calculate_embedding_potential(self, occupied, active, virtual, mo_occ, overlap, mean_field):
         """
         Calculate the embedding potential Vemb and related quantities.
+        Handle cases where arrays might be empty and electron count issues.
         """
-        # Number of occupied, active, and virtual orbitals
-        n_occ = occupied.shape[1]
-        n_act = active.shape[1]
-        n_vir = virtual.shape[1]
+        try:
+            # Number of occupied, active, and virtual orbitals
+            n_occ = occupied.shape[1] if occupied.size > 0 else 0
+            n_act = active.shape[1] if active.size > 0 else 0
+            n_vir = virtual.shape[1] if virtual.size > 0 else 0
 
-        # Density matrices
-        D_O = np.dot(occupied * mo_occ[:n_occ], occupied.conj().T)
-        D_A = np.dot(active * mo_occ[n_occ:n_occ + n_act], active.conj().T)
-        D_C = np.dot(virtual * mo_occ[-n_vir:], virtual.conj().T)
+            # Skip calculation if all orbital spaces are empty
+            if n_occ == 0 and n_act == 0 and n_vir == 0:
+                print("Skipping embedding potential calculation: No valid orbitals.")
+                return None, None, 0, 0, 0, None
 
-        # Total density matrix
-        D_tot = D_O + D_A + D_C
+            # Print debug info
+            print(f"Number of occupied orbitals: {n_occ}")
+            print(f"Number of active orbitals: {n_act}")
+            print(f"Number of virtual orbitals: {n_vir}")
 
-        # Projectors
-        P_c = np.dot(virtual, virtual.conj().T)
-        P_o = np.dot(occupied, occupied.conj().T)
+            # Density matrices (Handle empty arrays)
+            D_O = np.dot(occupied * mo_occ[:n_occ], occupied.conj().T) if n_occ > 0 else np.zeros((overlap.shape[0], overlap.shape[1]))
+            D_A = np.dot(active * mo_occ[n_occ:n_occ + n_act], active.conj().T) if n_act > 0 else np.zeros((overlap.shape[0], overlap.shape[1]))
+            D_C = np.dot(virtual * mo_occ[-n_vir:], virtual.conj().T) if n_vir > 0 else np.zeros((overlap.shape[0], overlap.shape[1]))
 
-        # Projector P
-        P = overlap @ P_c @ overlap + overlap @ P_o @ overlap
+            # Total density matrix
+            D_tot = D_O + D_A + D_C
 
-        # Embedding calculations
-        mu = 1.0e6
-        Vsys = mean_field.get_veff(dm=D_tot)
-        Vact = mean_field.get_veff(dm=D_A)
-        Venv = mean_field.get_veff(dm=D_C)
+            # Projectors
+            P_c = np.dot(virtual, virtual.conj().T) if n_vir > 0 else np.zeros_like(overlap)
+            P_o = np.dot(occupied, occupied.conj().T) if n_occ > 0 else np.zeros_like(overlap)
 
-        # Embedding potential
-        Vemb = Vsys - Vact + (mu * P)
-        verror = Vsys - Vact  # Can be used for error estimation or analysis
+            # Projector P
+            P = overlap @ P_c @ overlap + overlap @ P_o @ overlap
 
-        return Vemb, D_A, n_occ, n_act, n_vir, verror
+            # Embedding calculations
+            mu = 1.0e6
+            Vsys = mean_field.get_veff(dm=D_tot)
+            Vact = mean_field.get_veff(dm=D_A)
+            Venv = mean_field.get_veff(dm=D_C)
+
+            # Embedding potential
+            Vemb = Vsys - Vact + (mu * P)
+            verror = Vsys - Vact  # Can be used for error estimation or analysis
+
+            return Vemb, D_A, n_occ, n_act, n_vir, verror
+
+        except Exception as e:
+            print(f"Error calculating embedding potential: {e}")
+            return None, None, 0, 0, 0, None
 
 
-    def calculate_in_active_space(self, mol, n_act, H_core, Vemb, D_A): 
+    def calculate_in_active_space(self, mol, n_act, H_core, Vemb, D_A):
         """
         Placeholder for calculation of density matrix in active space.
         """
-
         elists = []
         elistt = []
 
@@ -221,7 +246,7 @@ class Active_space_helper:
         emb_mf.get_hcore = lambda *args: H_core + Vemb
         emb_mf.max_cycle = 200
         e_hf_act = emb_mf.kernel(dm0=D_A)
-        print('ehfact',e_hf_act)
+        print('ehfact', e_hf_act)
 
         emb_tda = tdscf.TDA(emb_mf)
         emb_tda.nstates = 3
